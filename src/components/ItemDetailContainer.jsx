@@ -7,6 +7,8 @@ import ProductDetail from "./ItemDetail";
 const ItemDetailContainer = () => {
   const [dato, setDato] = useState({});
   const { idProduct } = useParams();
+  
+  console.log('se redirigio a este component de detalles, renderizar, el param es : ',idProduct )
 
   useEffect(() => {
     fetchData(2000, ProductsData.find(item => item.id === parseInt(idProduct)))
