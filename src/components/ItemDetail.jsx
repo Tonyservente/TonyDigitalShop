@@ -13,11 +13,6 @@ import {
           <article className="detailCard">
             <h2 className="detailTitle">{item.title}</h2>
             <div className="detailContent">
-              <InnerImageZoom
-                src={`${item.thumbnail}`}
-                zoomSrc={`${item.thumbnail}`}
-                className="detailImage"
-              />
               <div className="detailAvailability">
                 <div className="detailTextDiv">
                   <p className="detailContentText">

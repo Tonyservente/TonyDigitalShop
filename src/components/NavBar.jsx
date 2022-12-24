@@ -11,6 +11,8 @@ import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function NavCustom() {
+  //Todo: declarar array y agregar los productos a este array
+  const arrProd = 40;
   return (
     <Navbar expand="lg">
       <Container fluid>
@@ -47,7 +49,7 @@ function NavCustom() {
           </Nav>
           <Form className="d-flex">
             <Nav.Link href="#" className="navCartDiv">
-              <CartWidget />
+              <CartWidget  totalList={arrProd}/>
             </Nav.Link>
             <Form.Control
               type="search"

@@ -1,9 +1,11 @@
 import { FaShoppingCart } from 'react-icons/fa';
 
-const CartWidget = () => {
+const CartWidget = ({totalList}) => {
+    console.log('este es el total', totalList)
+
     return (
     <>
-        <p className='cart'><FaShoppingCart/>5</p>
+        <p className='cart'><FaShoppingCart/>{totalList}</p>
     </>
     )
 }
